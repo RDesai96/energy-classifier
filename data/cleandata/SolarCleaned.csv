@@ -1,0 +1,417 @@
+,Location,Capacity,Dev1,Dev2
+0,"BoulderCity,Nevada",64 MW,Acciona,NV Energy
+1,"Brookhaven,NewYork",32 MW,BP Solar,Long Island Power Authority
+2,"PilesgroveTownship,NewJersey",18 MW,Con Edison/Panda Energy,Atlantic City Electric
+3,"Fresno,California",20 MW,Cupertino Electric,Pacific Gas & Electric
+4,"Fresno,California",15 MW,Cupertino Electric,Pacific Gas & Electric
+5,"Avenal,California",23 MW,Eurus,Pacific Gas & Electric
+6,"Avenal,California",22 MW,Eurus,Pacific Gas & Electric
+7,"GilaBend,Arizona",17 MW,First Solar,Arizona Public Service
+8,"Cimarron,NewMexico",30 MW,First Solar,Tri-State Generation and Transmission
+9,"Florida,MartinCounty",75 MW,Florida Power & Light Co.,Florida Power & Light Co.
+10,"Jacksonville,Florida",12 MW,juwi solar Inc.,Jacksonville Electric Authority
+11,"UpperSandusky,Ohio",10 MW,juwi solar Inc.,American Electric Power Co. Inc.
+12,"SanAntonio,Texas",14 MW,juwi solar Inc.,CPS Energy
+13,"Colorado,AlamosaCounty",30 MW,Iberdrola,Xcel Energy
+14,"Dover,Delaware",10 MW,SunPower/LS Power,Delmarva Power
+15,"Daggett,California",30 MW,Luz,Southern California Edison
+16,"KramerJunction,California",80 MW,Luz,Southern California Edison
+17,"KramerJunction,California",80 MW,Luz,Southern California Edison
+18,"KramerJunction,California",30 MW,Luz,Southern California Edison
+19,"KramerJunction,California",30 MW,Luz,Southern California Edison
+20,"KramerJunction,California",30 MW,Luz,Southern California Edison
+21,"Daggett,California",13.8 MW,Luz,Southern California Edison
+22,"KramerJunction,California",30 MW,Luz,Southern California Edison
+23,"FairfieldTownship,NewJersey",10 MW,Lincoln Renewable Energy,Atlantic City Electric
+24,"SantaTheresa,NewMexico",20 MW,First Solar,El Paso Electric
+25,"KramerJunction,California",30 MW,Luz,Southern California Edison
+26,"Nevada,ClarkCounty",12 MW,SunPower/MMA Renewable Ventures,Nellis Air Force Base
+27,"EastWindsor,NewJersey",14.1 MW,NJR Clean Energy Ventures,McGraw-Hill
+28,"BoulderCity,Nevada",48 MW,First Solar/Sempra Generation,Pacific Gas & Electric
+29,"Fresno,California",15 MW,Solon,Pacific Gas & Electric
+30,"BoulderCity,Nevada",10 MW,First Solar/Sempra Generation,Pacific Gas & Electric
+31,"GilaBend,Arizona",17 MW,Solon,Arizona Public Service
+32,"NorthCarolina,DavidsonCounty",16 MW,SunEdison,Duke Energy
+33,"NewMexico,Lea&EddyCounties",10 MW,SunEdison,Southwestern Public Service Co.
+34,"NewMexico,Lea&EddyCounties",10 MW,SunEdison,Southwestern Public Service Co.
+35,"NewMexico,Lea&EddyCounties",10 MW,SunEdison,Southwestern Public Service Co.
+36,"Alamosa,Colorado",19 MW,SunPower,Xcel Energy
+37,"Arcadia,Florida",25 MW,SunPower,Florida Power & Light Co.
+38,"KennedySpaceCenter,Florida",10 MW,SunPower,Florida Power & Light Co.
+39,"California,SanBernardinoCounty",280 MW,Abengoa,Pacific Gas & Electric
+40,"GilaBend,Arizona",280 MW,Abengoa,Arizona Public Service
+41,"Searchlight,Nevada",20 MW,American Capital Energy,NV Energy
+42,"Napoleon,Ohio",10 MW,BNB Renewable Energy Holdings,Campbell Soup Company
+43,"Sorrento,Florida",60 MW,BlueChip Energy,Progress Energy Florida
+44,"Barstow,California",133 MW,BrightSource Energy,Southern California Edison
+45,"Barstow,California",133 MW,BrightSource Energy,Pacific Gas & Electric
+46,"Alamosa,Colorado",30 MW,Cogentrix,Public Service Company of Colorado
+47,"Lancaster,California",34 MW,Beautiful Earth Group,Southern California Edison
+48,"Sorrento,Florida",40 MW,BlueChip Energy,Progress Energy Florida/SECO
+49,"Barstow,California",126 MW,BrightSource Energy,Pacific Gas & Electric
+50,"Emmitsburg,Maryland",14 MW,First Solar,University System of Maryland
+51,"Fresno,California",20 MW,Cupertino Electric,Pacific Gas & Electric
+52,"AntelopeValley,California",115 MW,First Solar,Pacific Gas & Electric
+53,"DesertCenter,California",270 MW,First Solar,Southern California Edison
+54,"Primm,Nevada",50 MW,First Solar,NV Energy
+55,"Illinois,LaSalleCounty",20 MW,Invenergy,ComEd
+56,"California,RiversideCounty",125 MW,NextEra Energy Resources,Pacific Gas & Electric
+57,"ElkGrove,California",18 MW,Recurrent Energy,Sacramento Municipal Utility District
+58,"Fresno,California",10 MW,Q Cells,Pacific Gas & Electric
+59,"CarrizoPlains,California",516 MW,First Solar,Pacific Gas & Electric
+60,"Fresno,California",20 MW,Q Cells,Pacific Gas & Electric
+61,"ElkGrove,California",19 MW,Recurrent Energy,Sacramento Municipal Utility District
+62,"Sacramento,California",12 MW,Recurrent Energy,Sacramento Municipal Utility District
+63,"Yavapai,Arizona",15 MW,Recurrent Energy,Arizona Public Service
+64,"Pflugerville,Texas",48 MW,Crystalline Silicon Photovoltaic,RRE Austin Solar/Panasonic Enterprise Solutions
+65,"Nevada,NyeCounty",Molten Salt,NV Energy,110 MW
+66,"California,TulareCounty",20 MW,Solar Project Solutions,Pacific Gas & Electric
+67,"Modesto,California",25 MW,SunPower,Modesto Irrigation District
+68,"ChinaLake,California",13.78 MW,SunPower,Naval Air Weapons Station
+69,"TintonFalls,NewJersey",15.904 MW,Zongyi Solar America,Wholesale
+70,"NewMexico,Lea&EddyCounties",10 MW,SunEdison,Southwestern Public Service Co.
+71,"ImperialValley,California",200 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+72,"ImperialValley,California",200 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+73,"ImperialValley,California",27 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+74,"ImperialValley,California",50 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+75,"ImperialValley,California",155 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+76,"ImperialValley,California",50 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+77,"ImperialValley,California",200 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+78,"ImperialValley,California",50 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+79,"ImperialValley,California",50 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+80,"Kingman,Arizona",200 MW,Parabolic Trough,Albiasa
+81,"ImperialValley,California",500 MW,AES Solar,San Diego Gas & Electric
+82,"ImperialValley,California",100 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+83,"PalmSprings,California",13 MW,Crystalline Silicon Photovoltaic,AES Solar
+84,"CapeCod,Massachusetts",18.3 MW,American Capital Energy,Cape & Vineyard Electric Cooperative
+85,"ImperialValley,California",200 MW,8minuteenergy,SDG&E
+86,"NewJersey,SalemCounty",80 MW,Crystalline Silicon Photovoltaic,Atlantic Green Power
+87,"Arizona,MaricopaCounty",300 MW,Crystalline Silicon Photovoltaic,NextEra Energy Resources
+88,"CoyoteSprings,Nevada",200 MW,BrightSource Energy,Pacific Gas & Electric
+89,"Barstow,California",18.8 MW,Crystalline Silicon Photovoltaic,C.F. Properties
+90,"JoshuaTree,California",10 MW,"Cascade Solar, LLC",Southern California Edison
+91,"Maryland,CharlesCounty",10 MW,Crystalline Silicon Photovoltaic,CPV Renewable Energy Company
+92,"California,SanBernardinoCounty",45 MW,Chevron Energy Solutions,Southern California Edison
+93,"NewMexico,GuadalupeCounty",300 MW,Crystalline Silicon Photovoltaic,Corporación Gestamp/ GA-Solar
+94,"Pueblo,Colorado",30 MW,Crystalline Silicon Photovoltaic,Element Power
+95,"Nevada,NyeCounty",200 MW,Crystalline Silicon Photovoltaic,Element Power
+96,"CoyoteSprings,Nevada",200 MW,BrightSource Energy,Pacific Gas & Electric
+97,"Presidio,Texas",50 MW,Crystalline Silicon Photovoltaic,Element Power
+98,"Cumberland,NewJersey",20 MW,Crystalline Silicon Photovoltaic,Element Power
+99,"Tulare,California",120 MW,Crystalline Silicon Photovoltaic,Element Power
+100,"Kern,California",200 MW,Crystalline Silicon Photovoltaic,Element Power
+101,"Utah,WeberCounty",55 MW,Crystalline Silicon Photovoltaic,Element Power
+102,"Marion,Ohio",15 MW,Crystalline Silicon Photovoltaic,Element Power
+103,"Dorchester,Maryland",15 MW,Crystalline Silicon Photovoltaic,Element Power
+104,"Maricopa,Arizona",150 MW,Crystalline Silicon Photovoltaic,Element Power
+105,"LosAngeles,California",100 MW,Crystalline Silicon Photovoltaic,Element Power
+106,"Riverside,California",20 MW,Crystalline Silicon Photovoltaic,Element Power
+107,"Kern,California",16 MW,Crystalline Silicon Photovoltaic,Element Power
+108,"Florida,PolkCounty",25 MW,Energy 5.0,Tampa Electric
+109,Nevada,360 MW,Thin-Film Photovoltaic,ENN Mojave Energy
+110,Nevada,360 MW,Thin-Film Photovoltaic,ENN Mojave Energy
+111,"Kern/Kings/Tulare,California",31 MW,EDF Renewables,Marin Clean Energy
+112,"Washington,Pennsylvania",20 MW,Crystalline Silicon Photovoltaic,ESA Renewables
+113,"Indianapolis,Indiana",10 MW,ET Energy Solutions LLC,Indianapolis Power and Light
+114,"Primm,Nevada",250 MW,First Solar,Southern California Edison
+115,"MountainHomeAFB,Idaho",20 MW,GrandView Solar PV One LLC,Idaho Power Co.
+116,"BabcockRanch,Florida",75 MW,Florida Power & Light Co.,Florida Power & Light Co.
+117,"Nesquehoning,Pennsylvania",10 MW,Green Energy Capital Partners,PPL
+118,California,250 MW,Parabolic Trough,Harper Lake LLC
+119,"Palmdale,California",50 MW,Parabolic Trough,Inland Energy Inc.
+120,"QueenCreek,Arizona",19 MW,juwi Solar Inc.,Salt River Project
+121,"Nevada,ClarkCounty",350 MW,K Road Solar,Los Angeles Department of Water & Power
+122,"Colorado,AlamosaCounty",37.4 MW,Crystalline Silicon Photovoltaic,Lincoln Renewable Energy
+123,"Cochise,Arizona",25 MW,Crystalline Silicon Photovoltaic,Matinee Energy
+124,"Hagerstown,Maryland",20 MW,First Solar,FirstEnergy Solutions
+125,"ManningTownship,NewJersey",10 MW,Crystalline Silicon Photovoltaic,Lincoln Renewable Energy
+126,"ImperialValley,California",170 MW,LS Power,San Diego Gas & Electric
+127,"Dragoon,Arizona",150 MW,Crystalline Silicon Photovoltaic,Matinee Energy
+128,"ImperialValley,California",49 MW,MMR Power Solutions,SDG&E
+129,"Arizona,MojaveCounty",340 MW,Parabolic Trough,Mojave Sun Power
+130,"Florida,GadsdenCounty",400 MW,National Solar Power,Progress Energy Florida
+131,"California,LakeHavasuCity",1200 MW,Crystalline Silicon Photovoltaic,Needle Mountain Power LLC
+132,"Mendota,California",60 MW,North Star Solar,Pacific Gas & Electric
+133,"Hardee,Florida",200 MW,National Solar Power,Progress Energy Florida
+134,"Cumberland,Ohio",50 MW,New Harvest Ventures/Agile Energy,American Electric Power Co. Inc.
+135,"California,RiversideCounty",750 MW,Crystalline Silicon Photovoltaic,NextEra Energy Resources
+136,"Houston,Texas",10 MW,NRG Energy,City of Houston
+137,"SanAntonio,Texas",329 MW,OCI Solar Power,CPS Energy
+138,"Lancaster,California",66 MW,First Solar,Pacific Gas & Electric
+139,"ImperialValley,California",10 MW,Ormat,Imperial Irrigation District
+140,"WestSacramento,California",20 MW,Crystalline Silicon Photovoltaic,OPDE U.S. Corporation
+141,"Arizona,CoconinoCounty",20 MW,Crystalline Silicon Photovoltaic,Pacific Blue Energy Corporation
+142,"Nevada,NyeCounty",150 MW,Thin-Film Photovoltaic,Pacific Solar Investments Inc.
+143,"California,AlamedaCounty",400 MW,Crystalline Silicon Photovoltaic,Pegasus Energy Partners
+144,"California,SanBernardinoCounty",18 MW,Recurrent Energy,Southern California Edison
+145,"California,KernCounty",20 MW,Recurrent Energy,Southern California Edison
+146,"Kauai,Hawaii",12 MW,PowerWorks,Kaua'i Island Utility Cooperative
+147,"California,KernCounty",20 MW,Recurrent Energy,Southern California Edison
+148,"Utah,IronCounty",100 MW,Crystalline Silicon Photovoltaic,Scatec Solar
+149,"California,StanislausCounty",50 MW,Crystalline Silicon Photovoltaic,Scatec Solar
+150,"ImperialValley,California",14 MW,SDG&E,San Diego Gas & Electric
+151,"BoulderCity,Nevada",300 MW,Crystalline Silicon Photovoltaic,SECP/POSCO Power
+152,"California,SanDiegoCounty",30 MW,Soitec Solar Development LLC,San Diego Gas & Electric
+153,"Estancia,NewMexico",50 MW,Silverado Power,PNM
+154,"BoulderCity,Nevada",92 MW,First Solar,Pacific Gas & Electric
+155,"California,SanDiegoCounty",50 MW,Sol Orchard LLC,San Diego Gas & Electric
+156,Texas,300 MW,Crystalline Silicon Photovoltaic,Solar Energy Initiatives Inc.
+157,California,100 MW,Crystalline Silicon Photovoltaic,Solar Energy Initiatives Inc.
+158,"Nevada,NyeCounty",242 MW,Solarhybrid,NV Energy
+159,"RioLinda,California",10 MW,Crystalline Silicon Photovoltaic,Solar Power Inc.
+160,"California,TulareCounty",50 MW,GCL-Poly/Solar Project Solutions,Pacific Gas & Electric
+161,"California,SanBenitoCounty",420 MW,Crystalline Silicon Photovoltaic,Solargen Energy
+162,"California,KingsCounty",20 MW,EDF Renewables,Pacific Gas & Electric
+163,"California,TulareCounty",20 MW,GCL Poly/Solar Project Solutions,Pacific Gas & Electric
+164,"Arizona,LaPazCounty",100 MW,Power Tower,SolarReserve
+165,"California,RiversideCounty",150 MW,SolarReserve,Pacific Gas & Electric
+166,"California,TulareCounty",20 MW,GCL-Poly/Solar Project Solutions,Pacific Gas & Electric
+167,"DesertCenter,California",500 MW,BrightSource Energy,Abengoa
+168,"Nevada,NyeCounty",242 MW,Solarhybrid,NV Energy
+169,"GilaBend,Arizona",150 MW,Power Tower,SolarReserve
+170,"Colorado,SaguacheCounty",200 MW,Power Tower,SolarReserve
+171,"Adelanto,California",10 MW,SolarWorld,Los Angeles Department of Water & Power
+172,"EggHarbor,NewJersey",11 MW,Crystalline Silicon Photovoltaic,Seashore Solar
+173,"LasVegas,Nevada",20 MW,SunEdison,NV Energy
+174,"California,LosAngelesCounty",20 MW,SunEdison,Southern California Edison
+175,"California,KernCounty",20 MW,SunEdison,Southern California Edison
+176,"ChinoValley,Arizona",20 MW,SunEdison,Arizona Public Service
+177,"SanAntonio,Texas",20 MW,SunEdison,CPS Energy
+178,"Boise,Idaho",10 MW,Crystalline Silicon Photovoltaic,Sunergy World
+179,"California,LancasterCounty",20 MW,SunEdison,Southern California Edison
+180,"KernCounty,California",75 MW,SunEdison,Southern California Edison
+181,"LosBanos,California",110 MW,SunPower,Southern California Edison
+182,"Rosamond,California",276 MW,SunPower,Southern California Edison
+183,"Rosamond,California",579 MW,SunPower,Southern California Edison
+184,"SantaAna,California",20 MW,Sustainable Energy Capital Partners,Southern California Edison
+185,"CleElum,Washington",75 MW,Crystalline Silicon Photovoltaic,Teanaway Solar Reserve LLC
+186,"California,ImperialCounty",130 MW,First Solar,San Diego Gas & Electric
+187,Yabucoa,30 MW,Western Wind,Puerto Rico Electric Power Authority
+188,"Nevada,WashoeCounty",750 MW,Crystalline Silicon Photovoltaic,Vidler Water Co.
+189,"California,KingsCounty",2700 MW,Crystalline Silicon Photovoltaic,Westside Holdings
+190,"California,ImperialCounty",150 MW,Tenaska,San Diego Gas & Electric
+191,"OwensLake,California",10 MW,Crystalline Silicon Photovoltaic,Los Angeles Department of Water & Power
+192,"NewMexico,Lea&EddyCounties",10 MW,SunEdison,Southwestern Public Service Co.
+193,"Hyder,Arizona",17 MW,SunEdison,Arizona Public Service
+194,"Fallon,Nevada",24 MW,Enel Green Power,NV Energy
+195,"California,KernCounty",250 MW,Crystalline Silicon Photovoltaic,Solarhybrid
+196,"California,ImperialCounty",139 MW,First Solar,SDG&E
+197,"Liberty,Florida",100 MW,National Solar Power,Progress Energy Florida
+198,"Maiden,NorthCarolina",20 MW,SunPower,Apple
+199,"Pima,Arizona",25 MW,First Solar,Tucson Electric Power
+200,"Arlington,Arizona",106 MW,LS Power,San Diego Gas & Electric
+201,"California,SanBernardinoCounty",300 MW,First Solar,Southern California Edison
+202,"Arlington,Arizona",125 MW,Crystalline Silicon Photovoltaic,LS Power
+203,"Kauai,Hawaii",12 MW,REC Solar,Kaua'i Island Utility Cooperative
+204,"Lancaster,California",10 MW,Silverado Power,San Diego Gas & Electric
+205,"Lancaster,California",20 MW,Silverado Power,Pacific Gas & Electric
+206,"Arizona,YumaCounty",17 MW,Arizona Public Service,Arizona Public Service
+207,"Washington,Georgia",10 MW,Smart Energy Capital/Jacoby Development,Cobb EMC
+208,"Nevada,ClarkCounty",30 MW,SunEdison,NV Energy
+209,"Nevada,ClarkCounty",20 MW,NextEra Energy Resources,NV Energy
+210,"MountainHomeAFB,Idaho",20 MW,Crystalline Silicon Photovoltaic,Alternate Power Development Northwest
+211,"JoshuaTree,California",10 MW,Axio Power,Southern California Edison
+212,"MountainHomeAFB,Idaho",20 MW,Crystalline Silicon Photovoltaic,Alternate Power Development Northwest
+213,"ImperialValley,California",200 MW,Crystalline Silicon Photovoltaic,Abengoa
+214,"ElPaso,NewMexico",12 MW,SunEdison,El Paso Electric
+215,"MountainHomeAFB,Idaho",20 MW,Crystalline Silicon Photovoltaic,Alternate Power Development Northwest
+216,"Boulevard,California",80 MW,Soitec Solar Development LLC,San Diego Gas & Electric
+217,"BorregoSprings,California",45 MW,Soitec Solar Development LLC,San Diego Gas & Electric
+218,"LucerneValley,California",14 MW,Amonix,Southern California Edison
+219,"Boulevard,California",22 MW,Soitec Solar Development LLC,San Diego Gas & Electric
+220,"Galt,California",30 MW,Recurrent Energy,Sacramento Municipal Utility District
+221,Indiana,10 MW,Dominion Resources,Indianapolis Power and Light
+222,Indiana,10 MW,Dominion Resources,Indianapolis Power and Light
+223,"Somerset,Texas",11 MW,SunEdison,CPS Energy
+224,Indiana,10 MW,Dominion Resources,Indianapolis Power and Light
+225,"Vineland,NewJersey",12 MW,Conectiv Energy,Vineland Municipal Electric Utility
+226,"ImperialValley,California",160 MW,Crystalline Silicon Photovoltaic,Tenaska
+227,"Webberville,Texas()",30 MW,SunEdison,Austin Energy
+228,"Arizona,PinalCounty",20 MW,SunPower/Iberdrola Renewables,Salt River Project
+229,"Blythe,California",486 MW,NextEra Energy Resources,Southern California Edison
+230,"California,RiversideCounty",150 MW,Crystalline Silicon Photovoltaic,EDF Renewables
+231,"SocialCircle,Georgia",30 MW,Silicon Ranch,Georgia Power
+232,"DesertSprings,California",20 MW,GDT Tek,Wholesale
+233,"California,MaderaCounty",67 MW,Crystalline Silicon Photovoltaic,8minuteenergy
+234,"Niland,California",23 MW,SunPeak Power,Imperial Irrigation District
+235,"Nevada,ClarkCounty",750 MW,Power Tower,BrightSource Energy
+236,"Blythe,California",21 MW,First Solar,Southern California Edison
+237,"Maricopa,Arizona",15 MW,Crystalline Silicon Photovoltaic,juwi Solar Inc.
+238,"Maricopa,Arizona",20 MW,Crystalline Silicon Photovoltaic,Recurrent Energy
+239,"California,KernCounty",50 MW,EDF Renewables,San Diego Gas & Electric
+240,"Maricopa,Arizona",20 MW,Crystalline Silicon Photovoltaic,Recurrent Energy
+241,"Arlington,Arizona",46 MW,Sempra Generation,Pacific Gas & Electric
+242,"Arlington,Arizona",38 MW,Sempra Generation,Pacific Gas & Electric
+243,"SanLuis,Arizona()",20 MW,Solar Electric Solutions,Arizona Public Service
+244,"Prescott,Arizona",10 MW,SunEdison,Arizona Public Service
+245,"Tucson,Arizona",20 MW,SunEdison,Tucson Electric Power
+246,"Riverside,California",20 MW,SunEdison,Riverside Public Utilities
+247,"BoulderCity,Nevada",11 MW,Acciona,NV Energy
+248,"Ridgecrest,NorthCarolina",21.5 MW,Amnergy,Progress Energy Carolinas
+249,"Deming,NewMexico",50 MW,First Solar,El Paso Electric
+250,"California,SanBernardinoCounty",25 MW,Lincoln Renewable Energy,Southern California Edison
+251,"California,SanBernardinoCounty",12.5 MW,Lincoln Renewable Energy,Southern California Edison
+252,"PictureRocks,Arizona",200 MW,Crystalline Silicon Photovoltaic,OHL Industrial
+253,"Hyder,Arizona",14 MW,Arizona Public Service,Arizona Public Service
+254,"Riverside,California",540 MW,BrightSource Energy,Southern California Edison
+255,"NorthCarolina,BeaufortCounty",12.5 MW,Duke Energy/SunEnergy1,N.C. Eastern Municipal Power Agency
+256,"Arizona,YumaCounty",50 MW,First Solar,Pacific Gas & Electric
+257,"Arizona,YumaCounty",70 MW,First Solar,Pacific Gas & Electric
+258,"Arizona,YumaCounty",40 MW,First Solar,Pacific Gas & Electric
+259,"Arizona,YumaCounty",30 MW,First Solar,Pacific Gas & Electric
+260,"Arizona,YumaCounty",100 MW,First Solar,Pacific Gas & Electric
+261,"California,SantaBarbara",40 MW,First Solar,Pacific Gas & Electric
+262,"California,KernCounty",32 MW,First Solar,Pacific Gas & Electric
+263,Private,20 MW,First Solar,PNM
+264,"BorregoSprings,California",26 MW,NRG Energy/SunPower,SDG&E
+265,"Delaware,Kent",12 MW,juwi solar Inc.,Delaware Municipal Electric Corp.
+266,California,250 MW,Crystalline Silicon Photovoltaic,NextEra Energy Resources
+267,"Arlington,Arizona",66 MW,Sempra Generation,Pacific Gas & Electric
+268,"BoulderCity,Nevada",250 MW,Sempra Generation,Los Angeles Department of Water & Power
+269,"Rosamond,California",300 MW,Crystalline Silicon Photovoltaic,Sempra Generation
+270,"Kauai,Hawaii",14 MW,SolarCity,Kaua'i Island Utility Cooperative
+271,"California,KernCounty",20 MW,SunEdison,Southern California Edison
+272,"California,KernCounty",20 MW,SunEdison,Pacific Gas & Electric
+273,"ElPaso,NewMexico",11 MW,SunEdison,El Paso Electric
+274,"California,KingsCounty",100 MW,SunPower,Pacific Gas & Electric
+275,"SanAntonio,Texas",41 MW,OCI Solar Power,CPS Energy
+276,"Conover,NorthCarolina",20 MW,SunPower,Apple
+277,"Florida,HamiltonCounty",70 MW,HERO Solar,Progress Energy
+278,NorthCarolina,35 MW,Crystalline Silicon Photovoltaic,Horizon Energy Group
+279,"Nesquehoning,Pennsylvania",10 MW,Crystalline Silicon Photovoltaic,Green Energy Capital Partners
+280,"California,KernCounty",20 MW,8minuteenergy,Southern California Edison
+281,"Duplin,NorthCarolina",100 MW,Crystalline Silicon Photovoltaic,Strata Solar
+282,"ElCentro,California",150 MW,First Solar,SDG&E
+283,"TwentyninePalms,California",10 MW,SolarWorld,Southern California Edison
+284,"GilaBend,Arizona",32 MW,Arizona Public Service,Arizona Public Service
+285,"TwentyninePalms,California",11 MW,SolarWorld,Southern California Edison
+286,"Indianapolis,Indiana",10 MW,ET Energy Solutions LLC,Indianapolis Power and Light
+287,"FortunaFoothills,Arizona",18 MW,Arizona Public Service,Arizona Public Service
+288,"Tonopah,Arizona",15 MW,Crystalline Silicon Photovoltaic,Arizona Public Service
+289,"Kern,California",20 MW,Infigen Energy,Southern California Edison
+290,"Kern,California",20 MW,Infigen Energy,Southern California Edison
+291,"California,SanDiegoCounty",20 MW,Silverado Power,San Diego Gas & Electric
+292,"Arlington,Arizona",25 MW,LS Power,San Diego Gas & Electric
+293,"Sonoma,California",20 MW,SunEdison,Sonoma County Water Agency
+294,"Riverside,California",20 MW,SunEdison,Riverside Public Utilities
+295,"Baker,California",350 MW,Photovoltaic (PV),Caithness
+296,"Lancaster,California",20 MW,Tuusso Energy,Pacific Gas & Electric
+297,"Lancaster,California",20 MW,Tuusso Energy,Southern California Edison
+298,"Lancaster,California",52 MW,Crystalline Silicon Photovoltaic,Silverado Power
+299,"LosLunas,NewMexico",20 MW,Photovoltaic (PV),PNM
+300,"Lancaster,California",38 MW,Beautiful Earth Group,Southern California Edison
+301,"BoulderCity,Nevada",350 MW,Crystalline Silicon Photovoltaic,"Boulder Solar Power, LLC"
+302,"Fresno,California",20 MW,Cupertino Electric,Pacific Gas & Electric
+303,"Fresno,California",40 MW,Silverado Power,City of Palo Alto
+304,"California,LosAngelesCounty",20 MW,Silverado Power,City of Palo Alto
+305,"Fresno,California",10 MW,Cupertino Electric,Pacific Gas & Electric
+306,"California,StanislausCounty",20 MW,Ridgeline Energy,City of Palo Alto
+307,"Nevada,WashoeCounty",20 MW,SunPower,Apple
+308,"Tucson,Arizona",13 MW,E.ON Climate & Renewables,Tucson Electric Power
+309,"Lancaster,California",20 MW,Recurrent Energy,Southern California Edison
+310,"California,KingsCounty",20 MW,Recurrent Energy,Pacific Gas & Electric
+311,"GildBend,Arizona",65 MW,Crystalline Silicon Photovoltaic,SolarReserve
+312,"SanLuisObispo,California",250 MW,SunPower,Pacific Gas & Electric
+313,"Phillipsburg,NewJersey",13 MW,Marina Energy,Berry Plastics Corp
+314,"Selmer,Tennessee,McNairyCounty",20 MW,Strata Solar,Tennessee Valley Authority
+315,"Selmer,Tennessee,McNairyCounty",20 MW,Strata Solar,Tennessee Valley Authority
+316,"Niland,California,ImperialCounty",20 MW,SunPeak Solar,Imperial Irrigation District
+317,"Freeport,Florida",24 MW,Crystalline Silicon Photovoltaic,Energy Farm Inc.
+318,"ImperialValley,California",200 MW,AES Solar,San Diego Gas & Electric
+319,"Arizona,YumaCounty",28 MW,First Solar,Pacific Gas & Electric
+320,"CarrizoPlains,California",34 MW,First Solar,Pacific Gas & Electric
+321,"Halifax,NorthCarolina",20 MW,Duke Energy,Dominion Virginia Power
+322,"Arizona,YumaCounty",12 MW,First Solar,Pacific Gas & Electric
+323,"Warren,Massachusetts",14 MW,First Wind,University of Massachusetts
+324,"California,KernCounty",20 MW,8minuteenergy,Pacific Gas & Electric
+325,"Delta,Utah",300 MW,Photovoltaic (PV),Energy Capital Group
+326,"Rosamond,California",40 MW,First Solar,"Cities of Pasadena, Riverside, Colton and Azusa"
+327,"O'ahu,Hawaii",15 MW,SolarCity,Hawaiian Electric Co.
+328,"Fresno,California",23 MW,Swinerton Builders,Pacific Gas & Electric
+329,"Cumberland,Ohio",50 MW,New Harvest Ventures/Agile Energy,American Electric Power Co. Inc.
+330,"California,RiversideCounty",125 MW,NextEra Energy Resources,Pacific Gas & Electric
+331,"Rosamond,California",57 MW,SunPower,Southern California Edison
+332,"Texas,PecosCounty",22 MW,Thin-Film Photovoltaic,First Solar
+333,"ElCentro,California",20 MW,Sol Orchard LLC,Imperial Irrigation District
+334,"California,SanDiegoCounty",30 MW,Soitec Solar Development LLC,San Diego Gas & Electric
+335,"Boulevard,California",80 MW,Soitec Solar Development LLC,San Diego Gas & Electric
+336,"Fresno,California",20 MW,PG&E/Cupertino Electric,Pacific Gas & Electric
+337,"DesertCenter,California",280 MW,First Solar,Southern California Edison
+338,"StatenIsland,NewYork",20 MW,SunEdison,Con Edison
+339,"Sprague,Connecticut",20 MW,HelioSage Energy LLC,CL&P and UI
+340,"Fresno,California",10 MW,PG&E/Cupertino Electric,Pacific Gas & Electric
+341,"Brackettville,Texas",39 MW,OCI Solar Power,CPS Energy
+342,"Fresno,California",20 MW,PG&E/Cupertino Electric,Pacific Gas & Electric
+343,"Raritan,NewJersey",10 MW,Con Edison,JCP&L
+344,"WhiteRiver,California",20 MW,Con Edison,Pacific Gas & Electric
+345,"Woodbury,Georgia",12 MW,Origis Energy,Georgia Power
+346,"Camilla,Georgia",12 MW,Origis Energy,Georgia Power
+347,"Tucson,Arizona",14.5 MW,SunEdison,USAF
+348,"California,KernCounty",20 MW,Recurrent Energy,Southern California Edison
+349,"California,KernCounty",15 MW,Recurrent Energy,SCPPA
+350,"California,KingsCounty",20 MW,Dominion Resources,Pacific Gas & Electric (PG&E)
+351,"California,KernCounty",45 MW,Recurrent Energy,California Department of Water Resources
+352,"California,KingsCounty",20 MW,Dominion Resources,Pacific Gas & Electric (PG&E)
+353,"California,FresnoCounty",19 MW,Dominion Resources,Southern California Edison (SCE)
+354,"California,KernCounty",20 MW,Dominion Resources,Pacific Gas & Electric (PG&E)
+355,"California,KernCounty",20 MW,Dominion Resources,Southern California Edison (SCE)
+356,"California,KernCounty",20 MW,Dominion Resources,SCPPA
+357,"Hooper,Colorado",50 MW,SunPower,Xcel Energy
+358,"Utah,BeaverCounty",80 MW,First Wind,Rocky Mountain Power
+359,"Utah,BeaverCounty",80 MW,First Wind,Rocky Mountain Power
+360,"Utah,IronCounty",80 MW,First Wind,Rocky Mountain Power
+361,"Utah,BeaverCounty",80 MW,First Wind,Rocky Mountain Power
+362,Nevada,19 MW,Photovoltaic (PV),NV Energy
+363,"ChinoValley,Arizona",20 MW,Photovoltaic (PV),RES America
+364,"Pueblo,Colorado",120 MW,Community Energy LLC,Xcel Energy
+365,"Phoenix,Arizona",10 MW,Photovoltaic (PV),Pinnacle West Capital Corporation
+366,"Selmer,Tennessee",16 MW,Photovoltaic (PV),Strata Solar
+367,"Selmer,Tennessee",16 MW,Photovoltaic (PV),Strata Solar
+368,"California,KernCounty",90 MW,Photovoltaic (PV),8minutenergy
+369,"UnderDevelopment,Photovoltaic(PV)",150 MW,Photovoltaic (PV),8minutenergy
+370,"ElPaso,Texas,Photovoltaic(PV)",13 MW,juwi solar inc.,El Paso Electric Company
+371,"NorthCarolina,WilsonCounty",75 MW,Strata Solar,Duke Energy Progress
+372,California,75 MW,Silverado,SCE
+373,"LosBanos,California",110 MW,Under Development,SCE
+374,"Calipatria,California",150 MW,Under Development,SDG&E
+375,"Rosamond,California",310 MW,Under Development,SCE
+376,"Rosamond,California",270 MW,Under Development,SCE
+377,"LostHills,California",12 MW,Under Development,PG&E
+378,"Calipatria,California",20 MW,Under Development,SDG&E
+379,"Boulevard,California",22 MW,Under Development,SDG&E
+380,"Calipatria,California",20 MW,Under Development,SDG&E
+381,"DesertCenter,California",300 MW,Under Development,PG&E
+382,"Stratford,California",20 MW,Under Development,PG&E
+383,"LostHills,California",20 MW,Under Development,PG&E
+384,"NewMexico,GuadalupeCounty",40 MW,Photovoltaic (PV),Infigen Energy
+385,"Arizona,YumaCounty",12 MW,First Solar,Pacific Gas & Electric
+386,"ImperialValley,California",30 MW,Crystalline Silicon Photovoltaic,San Diego Gas & Electric
+387,"CaliforniaValley,California",210 MW,"California Valley, California",Operating
+388,"NewMexico,QuayCounty",25 MW,Photovoltaic (PV),Infigen Energy
+389,"Corcoran,California",20 MW,"SPS Corcoran West, LLC",SCE
+390,"Ivanpah,California",117 MW,Operating,SCE
+391,"Alpaugh,California",48 MW,Operating,PG&E
+392,"Alpaugh,California",19 MW,Operating,PG&E
+393,"BorregoSprings,California",26 MW,Operating,SDG&E
+394,"ElPaso,Texas",13 MW,juwi,El Paso Electric
+395,"UnderConstruction,RESAmericas",20 MW,Under Construction,RES Americas
+396,"California,SantaMargarita,SanLuisObispoCounty",550 MW,Under Development,PG&E
+397,"California,DesertCenter,RiversideCounty",171 MW,Under Development,PG&E
+398,"nearDesertCenter,TBD,California",171 MW,Under Development,PG&E
+399,California,206 MW,"Recurrent Energy, LLC",SCE
+400,California,51 MW,"8minutenergy Renewables, LLC",SCE
+401,California,310 MW,"Tribal Solar, LLC",SCE
+402,California,247 MW,"Panoche Valley Solar, LLC",SCE
+403,California,154 MW,"8minutenergy Renewables, LLC and Silver Ridge Power, LLC",SCE
+404,California,94 MW,"Copper Mountain Solar 4, LLC",SCE
+405,"Alpaugh,California,PG&E",19 MW,"Alpaugh, California",PG&E
+406,"RoanokeRapids,NorthCarolina",29.6 MW,Under Development,Photovoltaic (PV)
+407,California,252 MW,"8minutenergy Renewables, LLC and Silver Ridge Power, LLC",SCE
+408,"Columbus,Georgia",30 MW,Photovoltaic (PV),U.S. Army
+409,"Hinesville,Georgia",30 MW,Photovoltaic (PV),U.S. Army
+410,"Augusta,Georgia",30 MW,Photovoltaic (PV),U.S. Army
+411,"SierraVista,Arizona",23 MW,E. On Climate and Renewables,Tucson Electric Power
+412,"California,KernCounty",20 MW,Photovoltaic (PV),Infigen Energy
+413,"California,KernCounty",20 MW,Photovoltaic (PV),Infigen Energy
+414,"California,KernCounty",15 MW,Photovoltaic (PV),Infigen Energy
+415,"California,KernCounty",20 MW,Photovoltaic (PV),Infigen Energy
