@@ -1,0 +1,30 @@
+data sources:
+solar projects: solarprojects.anl.gov
+solar potential:
+wind projects:
+wind potential:
+
+OVERVIEW:
+
+The U.S. policy toward renewable energy has been fairly laissez-faire save for the occasional subsidy,
+relying primarily on market forces to drive the energy transition. By default, this has led to a
+decentralized approach, where disparate actors across the country have pursued transitioning to clean energy
+in their own ways.
+
+This project seeks to analyze utility scale renewables (i.e. wind farms and solar farms) and seeks to answer
+the following questions:
+
+    1. Are the current locations of these projects efficient?
+        a. Does the choice of a wind farm vs a solar farm in a given location make sense?
+        b. Are local measures of wind/solar potential good classifiers for the presence of
+           a solar vs a wind project for a given area?
+    2. How accurate of a classifier can be built taking into account the current locations of
+       utility scale solar and wind projects?
+        a. If an accurate classifier can be built using solar/wind potential as inputs, then
+           we can surmise that the current market approach to renewables is at the very least,
+           efficient.
+        b. If an accurate classifier cannot be built, then it is worth exploring whether federal,
+           state, and local governments should consider more centralized forms of planning when building
+           utility scale projects in their region.
+
+
