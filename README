@@ -2,7 +2,7 @@ Data:
 
 
 
-I have included the code I used to scrape and clean the data in the /data/dataretrieval
+I have included the code I used to scrape and clean the data in the data/dataretrieval
 directory as a courtesy, but be warned that urls, paths, and even the actual data
 is susceptible to changes that I cannot account for.
 
