@@ -30,8 +30,8 @@ for address in locations:
 
 # Appending coordinates to df and some further cleanup
 df.drop(['Dev1','Dev2'], axis=1, inplace=True)
-df['Longitudes'] = np.array(longs)
-df['Latitudes']  = np.array(lats)
+df['Longitude'] = np.array(longs)
+df['Latitude']  = np.array(lats)
 df['Power Source'] = 'Solar'
 df['Capacity'] = df['Capacity'].str.replace(' MW','', regex=False)
 pd.to_numeric(df['Capacity'])

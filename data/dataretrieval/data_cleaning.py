@@ -4,7 +4,7 @@ import pandas as pd
 
 # SUMMARY:
 # Cleans the scraped solar dataset obtained by data_scraping.py
-# Saves the cleaned file at data/cleandata/SolarFinal.csv
+# Saves the cleaned file at data/cleandata/SolarIncomplete.csv
 
 # WARNING: URLs and filenames will likely change as databases are
 # updated, highly advised to use the already prepared clean dataset.
@@ -29,7 +29,7 @@ with open(raw_file, 'r') as f:
 # Extracting specific columns from the raw retrieve file
 with open(temp_file) as D:
     reader = csv.reader(D, delimiter='\t')
-    data_tuples = [ ( row[0] + ',' + row[1], row[-2], row[-4], row[-3]) for row in reader]
+    data_tuples = [(row[0] + ',' + row[1], row[-2], row[-4], row[-3]) for row in reader]
 
 
 
@@ -73,5 +73,6 @@ df.iloc[404,0] = 'California,Imperial County'
 df.iloc[405,0] = 'Alpaugh,California'
 df.iloc[408,0] = 'Fort Mohave,Arizona'
 df.drop(df.index[[108,109,111,131,155,189,261,278,362,369,372,394,397,398]], inplace=True)
+
 
 df.to_csv(dest_file, sep = ',',index=False)
