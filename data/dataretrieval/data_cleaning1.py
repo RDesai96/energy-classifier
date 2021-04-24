@@ -3,12 +3,14 @@ import os
 import pandas as pd
 
 # SUMMARY:
-# Cleans the scraped solar dataset obtained by data_scraping.py
-# Saves the cleaned file at data/cleandata/SolarIncomplete.csv
+# Cleans the scraped raw solar dataset obtained in data_scraping1.py.
+# Saves the cleaned file at data/cleandata/SolarIncomplete.csv.
 
-# WARNING: URLs and filenames will likely change as databases are
-# updated, highly advised to use the already prepared clean dataset.
-# As you see below, lot of hard-coding involved here, not very elegant.
+# ATTENTION: Highly advised to use the already prepared clean dataset.
+# As you see below, lot of hard-coding involved here, not dynamic at all.
+# If you scrape the data yourself, it is very likely the code below will
+# lead to incorrect cleaning and you will have a compromised dataset.
+
 # See README for link to the prepared, cleaned data.
 
 dest_file = 'data/cleandata/SolarIncomplete.csv'
@@ -31,7 +33,7 @@ with open(temp_file) as D:
     reader = csv.reader(D, delimiter='\t')
     data_tuples = [(row[0] + ',' + row[1], row[-2], row[-4], row[-3]) for row in reader]
 
-
+os.remove(temp_file)
 
 # Getting rid of extraneous strings
 # Getting rid of unverifiable projects and adding locations to verified projects
