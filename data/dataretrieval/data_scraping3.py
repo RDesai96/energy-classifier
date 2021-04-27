@@ -25,11 +25,13 @@ data = {'Longitude':longitudes, 'Latitude':latitudes, 'DNI':DNI, 'GHI':GHI}
 df = pd.DataFrame(data)
 df = df[(df.Latitude > 13) & (df.Latitude < 50)]
 df = df[(df.Longitude > -172) & (df.Longitude < 145)]
-df.to_csv('data/cleandata/SolarPotential.csv',index_label=False)
+df.to_csv('data/cleandata/SolarPotential.csv',index=False)
 
 
 df_wind = pd.read_csv('data/rawdata/pot_wind_cap_140_current.csv')
 df_wind.drop(labels=['FID','gid','area_km2','region'],axis=1,inplace=True)
 df_wind.columns = ['Latitude','Longitude','State','a30','a35','a40']
-df_wind.to_csv('data/cleandata/WindPotential.csv',index_label=False)
+reorder_columns = ['Longitude','Latitude','State','a30','a35','a40']
+df_wind = df_wind.reindex(columns=reorder_columns)
+df_wind.to_csv('data/cleandata/WindPotential.csv',index=False)
 
