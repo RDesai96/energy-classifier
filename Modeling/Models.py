@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.impute import KNNImputer
-from sklearn.metrics import classification_report, plot_roc_curve
+from sklearn.metrics import classification_report, plot_roc_curve, roc_curve,roc_auc_score
 from sklearn.linear_model import LogisticRegressionCV
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.svm import SVC
@@ -27,91 +27,84 @@ X_train, X_test, y_train, y_test = \
 knn_impute = KNNImputer()
 scaler = StandardScaler()
 
+
 # TODO: Trees/Bagging
 # TODO: Plots (ROC curves, variable importance), check for well calibrated probabilities
 
 # Logistic Elastic Net
-# log_elastic_net = LogisticRegressionCV(cv=5,
-#                                        penalty='elasticnet',
-#                                        solver='saga',
-#                                        random_state=42,
-#                                        max_iter=10000,
-#                                        l1_ratios=[0,0.2,0.4,0.6,0.8,.9,1] )
-#
-# pipe = Pipeline( [  ('impute',  knn_impute),
-#                     ('scale',   scaler),
-#                     ('elasticnet', log_elastic_net ) ])
-#
-# pipe.fit(X_train,y_train)
-# coefs = pd.DataFrame(pipe[2].coef_, columns=df_learn.columns)
-# plt.bar(x=feat_names, height=abs(coefs.values.flatten())/(abs(coefs.values).sum()))
-# plt.title('Logistic Elastic Net Feature Importance: L1_ratio = 0, Lambda = 0.0464')
-# plt.xticks(rotation=45)
-# plt.savefig('data/Plots/Logistic_Feat_Imp.png')
-#
-# print('Tuned Cost Parameter: ' + str(pipe[2].C_))
-# print('Tuned L1 ratio: ' + str(pipe[2].l1_ratio_))
-#
-# print('Training Accuracy: ' + str(pipe.score(X_train,y_train)))
-#
-# pipe.set_params(elasticnet__Cs=[pipe[2].C_])
-# pipe.set_params(elasticnet__l1_ratios=pipe[2].l1_ratio_)
-#
-# y_pred = pipe.predict(X_test)
-# print('Test Accuracy: ' + str(pipe.score(X_test,y_test)))
-# print(classification_report(y_test, y_pred))
-#
-# plot_roc_curve(pipe,X_test,y_test)
-# plt.title('Logistic Elastic Net: L1_Ratio = 0, Lambda = 0.0464')
-# plt.savefig('data/Plots/Logistic_ROC_Curve.png')
+log_elastic_net = LogisticRegressionCV(cv=5,
+                                       penalty='elasticnet',
+                                       solver='saga',
+                                       random_state=42,
+                                       max_iter=10000,
+                                       l1_ratios=[0,0.2,0.4,0.6,0.8,.9,1] )
+
+pipe = Pipeline( [  ('impute',  knn_impute),
+                    ('scale',   scaler),
+                    ('elasticnet', log_elastic_net ) ])
+
+pipe.fit(X_train,y_train)
+coefs = pd.DataFrame(pipe[2].coef_, columns=df_learn.columns)
+Logistic_feat_imp = abs(coefs.values.flatten())/(abs(coefs.values).sum())
+
+print('Logistic EN Tuned Cost Parameter: ' + str(pipe[2].C_))
+print('Logistic EN Tuned L1 ratio: ' + str(pipe[2].l1_ratio_))
+
+print('Logistic EN Training Accuracy: ' + str(pipe.score(X_train,y_train)))
+
+pipe.set_params(elasticnet__Cs=[pipe[2].C_])
+pipe.set_params(elasticnet__l1_ratios=pipe[2].l1_ratio_)
+
+
+y_pred = pipe.predict(X_test)
+disp = plot_roc_curve(pipe, X_test, y_test, name='Logistic EN (L1=0,lambda=0.0464)')
+Logistic_acc = pipe.score(X_test,y_test)
+print('Logistic EN Test Accuracy: ' + str(Logistic_acc))
+print(classification_report(y_test, y_pred))
+
 
 # Support Vector Machine
-# param_grid = {'C': [0.1, 1, 10, 100, 500, 1000],
-#               'gamma': [0.18, 0.27, 0.67],
-#               'kernel': ['linear','rbf']}
-#
-# svc = GridSearchCV(SVC(random_state=42), param_grid, refit = True, verbose = 0)
-#
-# pipe = Pipeline( [  ('impute',  knn_impute),
-#                     ('scale',   scaler),
-#                     ('SVM',     svc ) ])
-#
-#
-# pipe.fit(X_train,y_train)
-# print('Tuned Hyarameters: ' + str(pipe[2].best_params_))
-# print('Training Accuracy: ' + str(pipe.score(X_train,y_train)))
-#
-# y_pred = pipe.predict(X_test)
-# print('Test Accuracy: ' + str(pipe.score(X_test,y_test)))
-# print(classification_report(y_test, y_pred))
-#
-# plot_roc_curve(pipe,X_test,y_test)
-# plt.title('SVM w/ RBF Kernel, C = 10, Gamma = 0.67')
-# plt.savefig('data/Plots/SVM_ROC_Curve.png')
+param_grid = {'C': [0.1, 1, 10, 100, 500, 1000],
+              'gamma': [0.18, 0.27, 0.67],
+              'kernel': ['linear','rbf']}
+
+svc = GridSearchCV(SVC(random_state=42), param_grid, refit = True, verbose = 0)
+
+pipe = Pipeline( [  ('impute',  knn_impute),
+                    ('scale',   scaler),
+                    ('SVM',     svc ) ])
+
+
+pipe.fit(X_train,y_train)
+SVM_acc = pipe.score(X_train,y_train)
+print('SVM Tuned Hyarameters: ' + str(pipe[2].best_params_))
+print('SVM Training Accuracy: ' + str(SVM_acc))
+
+y_pred = pipe.predict(X_test)
+SVM_disp = plot_roc_curve(pipe, X_test, y_test, ax=disp.ax_,name='SVM (rbf, C=10, gamma=0.67)')
+print('SVM Test Accuracy: ' + str(pipe.score(X_test,y_test)))
+print(classification_report(y_test, y_pred))
+
 
 # Penalized LDA
-# lda = LinearDiscriminantAnalysis(solver='eigen',shrinkage='auto')
-# pipe = Pipeline( [  ('impute',  knn_impute),
-#                     ('scale',   scaler),
-#                     ('LDA',     lda ) ])
-#
-#
-# pipe.fit(X_train,y_train)
-# print('Training Accuracy: ' + str(pipe.score(X_train,y_train)))
-#
-# coefs = pd.DataFrame(pipe[2].coef_, columns=df_learn.columns)
-# plt.bar(x=feat_names, height=abs(coefs.values.flatten())/(abs(coefs.values).sum()))
-# plt.title('LDA Feature Importance')
-# plt.xticks(rotation=45)
-# plt.savefig('data/Plots/LDA_Feat_Imp.png')
-#
-# y_pred = pipe.predict(X_test)
-# print('Test Accuracy: ' + str(pipe.score(X_test,y_test)))
-# print(classification_report(y_test, y_pred))
-#
-# plot_roc_curve(pipe,X_test,y_test)
-# plt.title('LDA ')
-# plt.savefig('data/Plots/LDA_ROC_Curve.png')
+lda = LinearDiscriminantAnalysis(solver='eigen',shrinkage='auto')
+pipe = Pipeline( [  ('impute',  knn_impute),
+                    ('scale',   scaler),
+                    ('LDA',     lda ) ])
+
+
+pipe.fit(X_train,y_train)
+print('LDA Training Accuracy: ' + str(pipe.score(X_train,y_train)))
+
+coefs = pd.DataFrame(pipe[2].coef_, columns=df_learn.columns)
+LDA_feat_imp=abs(coefs.values.flatten())/(abs(coefs.values).sum())
+
+y_pred = pipe.predict(X_test)
+LDA_disp = plot_roc_curve(pipe, X_test, y_test, ax=disp.ax_,name='LDA')
+LDA_acc  = pipe.score(X_test,y_test)
+print('LDA Test Accuracy: ' + str(LDA_acc))
+print(classification_report(y_test, y_pred))
+
 
 # Random Forest
 rf = RandomForestClassifier(n_estimators=500, criterion='gini',
@@ -124,24 +117,42 @@ pipe = Pipeline( [  ('impute',  knn_impute),
 
 
 pipe.fit(X_train,y_train)
-print('Training Accuracy: ' + str(pipe.score(X_train,y_train)))
-print('OOB Error: ' + str(pipe[2].oob_score_))
+print('RF Training Accuracy: ' + str(pipe.score(X_train,y_train)))
+print('RF OOB Accuracy: ' + str(pipe[2].oob_score_))
 
-# feat_imp = pipe[2].feature_importances_
-# plt.bar(feat_names,feat_imp)
-# plt.xticks(rotation=45)
-# plt.title('Random Forest Classifier: Feature Importance (B = 500)')
-# plt.savefig('data/Plots/RF_Feat_Imp.png')
+RF_feat_imp = pipe[2].feature_importances_
 
 y_pred = pipe.predict(X_test)
-print('Test Accuracy: ' + str(pipe.score(X_test,y_test)))
+RF_disp = plot_roc_curve(pipe, X_test, y_test, ax=disp.ax_,name='Random Forest (B=500)')
+RF_acc  = pipe.score(X_test,y_test)
+print('RF Test Accuracy: ' + str(RF_acc))
 print(classification_report(y_test, y_pred))
 
-# plot_roc_curve(pipe,X_test,y_test)
-# plt.title('Random Forest Classifier (B = 500)')
-# plt.savefig('data/Plots/RF_ROC_Curve.png')
 
+RF_disp.figure_.suptitle("ROC curve comparison")
+plt.show()
+plt.savefig('data/Plots/ROC_Curves.png')
 
+plt.figure()
+plt.plot(feat_names, Logistic_feat_imp, 'bo', linestyle='None',
+         label='Logistic EN (L1=0, Lambda=0.0464)')
+plt.plot(feat_names, RF_feat_imp, 'r+', linestyle='None',label='Random Forest (B=500)')
+plt.plot(feat_names, LDA_feat_imp, 'gv', linestyle='None',label='LDA')
+plt.xticks(rotation=45)
+plt.legend(frameon=False)
+plt.title('Feature Importance Comparision')
+plt.savefig('data/Plots/Feat_Imp.png')
+plt.show()
+
+plt.figure()
+plt.bar(x = ['Logistic EN', 'SVM', 'LDA', 'Random Forest'],
+        height = [Logistic_acc,SVM_acc,LDA_acc,RF_acc], color='g')
+plt.xticks(rotation=45)
+plt.title('Accuracy Comparision')
+plt.savefig('data/Plots/Accuracy.png')
+plt.show()
+
+# gradio
 def Farm_Predictor(DNI, GHI, a40, a35, a30, Capacity, Longitude, Latitude):
     df = pd.DataFrame.from_dict({'DNI':[DNI], 'GHI':[GHI], 'a40':[a40],
                                  'a35':[a35], 'a30':[a30], 'Capacity':[Capacity],
@@ -160,7 +171,7 @@ Longitude = gr.inputs.Slider(minimum=-172, maximum=145, default=100, label="Long
 Latitude = gr.inputs.Slider(minimum=13, maximum=50, default=20, label="Latitude")
 
 
-gr.Interface(Farm_Predictor(), [DNI, GHI, a40, a35, a30, Capacity, Longitude, Latitude],
+gr.Interface(Farm_Predictor, [DNI, GHI, a40, a35, a30, Capacity, Longitude, Latitude],
              "label", live=True).launch()
 
 
