@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import time
+from sklearn.model_selection import train_test_split
 
 
 Sites = pd.read_csv('data/cleandata/MergedIncomplete.csv')
@@ -54,3 +54,17 @@ for val in range(Sites.shape[0]):
 
 
 Sites.to_csv('data/cleandata/MergedComplete.csv',index=False)
+
+
+Sites[['State', 'Power Source']] = Sites[['State', 'Power Source']].astype('category')
+df_learn = Sites.drop(['Power Source', 'State'] ,axis=1)
+
+X_train, X_test, y_train, y_test = \
+    train_test_split(df_learn, Sites['Power Source'],
+                     test_size=0.3,
+                     random_state=42)
+
+Train = pd.concat([X_train, y_train], axis=1)
+Test = pd.concat([X_test, y_test], axis=1)
+Train.to_csv('data/cleandata/Train.csv',index=False)
+Test.to_csv('data/cleandata/Test.csv',index=False)
