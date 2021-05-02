@@ -4,7 +4,6 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.experimental import enable_iterative_imputer
-from sklearn.impute import KNNImputer
 from sklearn.impute import IterativeImputer
 from sklearn.metrics import classification_report, plot_roc_curve
 from sklearn.linear_model import LogisticRegressionCV
@@ -16,19 +15,18 @@ from sklearn.inspection import permutation_importance
 df_train = pd.read_csv('data/cleandata/Train.csv')
 df_test = pd.read_csv('data/cleandata/Test.csv')
 
-X_train = df_train.drop('Power Source',axis=1)
+X_train = df_train.drop(['Power Source'],axis=1)
 y_train  = df_train['Power Source']
-X_test = df_test.drop('Power Source',axis=1)
+X_test = df_test.drop(['Power Source'],axis=1)
 y_test  = df_test['Power Source']
 
 feat_names = X_train.columns
 
 
-# imputer = IterativeImputer(sample_posterior=True,
-#                               imputation_order='descending',
-#                               skip_complete=True,
-#                               random_state=42)
-imputer = KNNImputer()
+imputer = IterativeImputer(sample_posterior=True,
+                            imputation_order='descending',
+                            skip_complete=True,
+                            random_state=42)
 scaler = StandardScaler()
 
 
@@ -143,10 +141,10 @@ print(classification_report(y_test, y_pred))
 del pipeRF, y_pred, rf
 
 
-RF_disp.figure_.suptitle("ROC Curve Comparison (KNN Imputation)")
+RF_disp.figure_.suptitle("ROC Curve Comparison")
 plt.tight_layout()
 plt.show()
-plt.savefig('data/Plots/ROC_CurvesKNN.png')
+plt.savefig('data/Plots/ROC_Curves.png')
 
 plt.figure()
 plt.plot(feat_names, Logistic_feat_imp, 'bo', linestyle='None',
@@ -154,9 +152,9 @@ plt.plot(feat_names, Logistic_feat_imp, 'bo', linestyle='None',
 plt.plot(feat_names, RF_feat_imp, 'r+', linestyle='None',label='Random Forest (B=500)')
 plt.plot(feat_names, LDA_feat_imp, 'gv', linestyle='None',label='LDA')
 plt.xticks(rotation=20)
-plt.title('Feature Importance Comparison (KNN Imputation)')
+plt.title('Feature Importance Comparison')
 plt.legend(frameon=False)
-plt.savefig('data/Plots/Feat_ImpKNN.png')
+plt.savefig('data/Plots/Feat_Imp.png')
 plt.show()
 
 plt.figure()
@@ -167,9 +165,9 @@ models  = ['Logistic EN (' + str(round(Logistic_acc,4)) + ')' ,
            'Random Forest (' + str(round(RF_acc,4)) + ')']
 plt.bar(x = models, height = heights, color='g')
 plt.xticks(rotation=45)
-plt.title('Accuracy Comparison (KNN Imputation)')
+plt.title('Accuracy Comparison')
 plt.tight_layout()
-plt.savefig('data/Plots/AccuracyKNN.png')
+plt.savefig('data/Plots/Accuracy.png')
 plt.show()
 
 

@@ -1,25 +1,20 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
 import seaborn as sns
 import missingno as msno
-from sklearn.impute import KNNImputer
+from sklearn.experimental import enable_iterative_imputer
+from sklearn.impute import IterativeImputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
-df = pd.read_csv('data/cleandata/MergedComplete.csv')
+df = pd.read_csv('data/cleandata/Train.csv')
 
-df[['State', 'Power Source']] = df[['State', 'Power Source']].astype('category')
-df_learn = df.drop(['Power Source','State'] ,axis=1)
-
-X_train, X_test, y_train, y_test = \
-    train_test_split(df_learn, df['Power Source'],
-                     test_size=0.3,
-                     random_state=42)
+X_train = df.drop(['Power Source'],axis=1)
+y_train  = df['Power Source']
 
 feat_names = X_train.columns.to_list()
-X_train.reset_index(drop=True, inplace=True)
+
 
 def draw_scatters(df, y, variables, n_rows, n_cols,
                     filename='plot'):
@@ -82,7 +77,10 @@ missing_matrix(X_train,filename='data/Plots/Missing_Data')
 def impute_scale_pca(df, components, filename='plot'):
     """Returns sklearn.PCA object for a dataset after imputing/scaling. Saves
     the plot of the first two PC scores at filename."""
-    ImputeX_train = KNNImputer(add_indicator=False).fit_transform(df)
+    ImputeX_train = IterativeImputer(sample_posterior=True,
+                                               imputation_order='descending',
+                                               skip_complete=True,
+                                               random_state=42).fit_transform(df)
     Scale_X = StandardScaler().fit_transform(ImputeX_train)
     pca = PCA(n_components=components)
     PC_scores = pca.fit_transform(Scale_X)
