@@ -3,21 +3,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import missingno as msno
+import os
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
-df = pd.read_csv('data/cleandata/Train.csv')
-
-X_train = df.drop(['Power Source'],axis=1)
-y_train  = df['Power Source']
-
-feat_names = X_train.columns.to_list()
-
+# Plotting functions for training data.
+# Saves Plots to data/Plots/
 
 def draw_scatters(df, y, variables, n_rows, n_cols,
-                    filename='plot'):
+                  filename='plot'):
     """Plots each column of pandas dataframe against supervisor on
     a grid specified by n_rows x n_cols."""
     fig=plt.figure()
@@ -27,10 +23,6 @@ def draw_scatters(df, y, variables, n_rows, n_cols,
         ax.set_title(var_name)
     fig.tight_layout()  # Improves appearance a bit.
     plt.savefig(filename + '.png')
-
-
-draw_scatters(X_train,y_train,feat_names,3,3,
-              filename='data/Plots/Scatter_Plots')
 
 
 def draw_histograms(df, variables, n_rows, n_cols, bin_size=100,
@@ -46,10 +38,6 @@ def draw_histograms(df, variables, n_rows, n_cols, bin_size=100,
     plt.savefig(filename + '.png')
 
 
-draw_histograms(X_train,feat_names,3,3,bin_size=50,
-                filename='data/Plots/Feature_Hists')
-
-
 def sborn_heatmap(df,filename='plot',title='Plot'):
     """Plots and saves a seaborn heatmap to filename as a png"""
     corr = df.corr()
@@ -62,16 +50,10 @@ def sborn_heatmap(df,filename='plot',title='Plot'):
     plt.savefig(filename + '.png')
 
 
-sborn_heatmap(X_train,filename='data/Plots/Corr_Heatmap',
-              title='Correlation Heatmap (Training Data)')
-
-
 def missing_matrix(df, filename='plot'):
     """Creates missingness plot and saves it as png at filename"""
     msno.matrix(df)
     plt.savefig(filename + '.png')
-
-missing_matrix(X_train,filename='data/Plots/Missing_Data')
 
 
 def impute_scale_pca(df, components, filename='plot'):
@@ -90,9 +72,37 @@ def impute_scale_pca(df, components, filename='plot'):
     plt.xlabel('PC1')
     plt.ylabel('PC2')
     plt.savefig(filename + '.png')
-    return pca
+    return PC_scores
 
 
-impute_scale_pca(X_train,components = 2,
-                 filename='data/Plots/PC_scores')
+def main(datapath= '', supervisor = '', destpath = ''):
 
+    if not os.path.exists(destpath):
+        os.makedirs(destpath)
+
+    df = pd.read_csv(datapath)
+
+    x_train = df.drop([supervisor],axis=1)
+    y_train  = df[supervisor]
+
+    feat_names = x_train.columns.to_list()
+
+    draw_scatters(x_train,y_train,feat_names,3,3,
+                  filename=os.path.join(destpath, 'Scatter_Plots'))
+
+    draw_histograms(x_train,feat_names,3,3,bin_size=50,
+                    filename=os.path.join(destpath, 'Feature_Hists'))
+
+    sborn_heatmap(x_train,filename=os.path.join(destpath, 'Corr_Heatmap'),
+                  title='Correlation Heatmap (Training Data)')
+
+    missing_matrix(x_train,filename=os.path.join(destpath, 'Missing_Data'))
+
+    impute_scale_pca(x_train,components = 2,
+                     filename=os.path.join(destpath, 'PC_Scores'))
+
+
+if __name__ == '__main__':
+    main(datapath='data/cleandata/Train.csv',
+         supervisor='Power Source',
+         destpath= 'data/Plots')

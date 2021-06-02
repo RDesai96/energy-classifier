@@ -38,7 +38,7 @@ log_elastic_net = LogisticRegressionCV(cv=5,
                                        max_iter=10000,
                                        l1_ratios=[0,0.2,0.4,0.6,0.8,.9,1] )
 
-pipeEN = Pipeline( [  ('impute',  imputer),
+pipeEN = Pipeline( [('impute',  imputer),
                     ('scale',   scaler),
                     ('elasticnet', log_elastic_net ) ])
 
