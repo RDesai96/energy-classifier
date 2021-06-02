@@ -1,22 +1,7 @@
-Data:
+Energy Classifier
+STAT 656 - Texas A&M
 
 
-
-I have included the code I used to scrape and clean the data in the data/dataretrieval
-directory as a courtesy, but be warned that urls, paths, and even the actual data
-is susceptible to changes that I cannot account for.
-
-I highly recommend simply downloading the nice, prepared dataset at the link above.
-
-
-original data sources:
-solar projects: solarprojects.anl.gov
-solar potential:
-wind projects:
-wind potential:
-
-
-DISCUSSION:
 
 OVERVIEW:
 
@@ -33,6 +18,31 @@ and seeks to answer the following questions:
         b. If an accurate classifier cannot be built, then it is worth exploring whether federal,
            state, and local governments should re-evaluate their approach when building utility scale
            projects in their region.
+
+
+For a quick overview of the project, see the project powerpoint pdf called "Energy_ppt.pdf" in the root directory.
+
+
+Data:
+
+
+I have included the code I used to scrape and clean the data in the data/dataretrieval
+directory as a courtesy, but be warned that urls, paths, and even the actual data
+is susceptible to changes that I cannot account for.
+
+I highly recommend simply downloading the nice, prepared dataset at the link below:
+
+https://drive.google.com/drive/folders/1vLGIhyKmc9Ads8AZVndyENLdF93nSDIj?usp=sharing
+
+
+original data sources:
+solar projects: solarprojects.anl.gov
+solar potential: NREL solar radiation database
+wind projects:  U.S. Wind Turbine Database
+wind potential: NREL Wind Prospector
+
+
+
 
 
 
