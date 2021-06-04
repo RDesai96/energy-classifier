@@ -1,6 +1,7 @@
 Energy Classifier
 STAT 656 - Texas A&M
 
+For a quick summary of the project, see the project powerpoint pdf called "Energy_ppt.pdf" in the root directory.
 
 
 OVERVIEW:
@@ -18,9 +19,6 @@ and seeks to answer the following questions:
         b. If an accurate classifier cannot be built, then it is worth exploring whether federal,
            state, and local governments should re-evaluate their approach when building utility scale
            projects in their region.
-
-
-For a quick overview of the project, see the project powerpoint pdf called "Energy_ppt.pdf" in the root directory.
 
 
 Data:
